@@ -1,0 +1,78 @@
+.events-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .events-container:hover {
+    background-color: #fff0f1; /* Light blue on hover */
+  }
+  
+  .events-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .events-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-item {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+
+  .event-icon {
+    font-size: 24px;
+    color: #ff0033;
+    margin-right: 15px;
+  }
+  
+  .event-details {
+    flex-grow: 1;
+  }
+  
+  .event-time {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .event-title {
+    font-weight: normal;
+    color: #ff0059;
+    font-size: 18px;
+  }
+  
+  .no-events-message {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .add-event-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff001e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .add-event-button:hover {
+    background-color: #b3002d;
+    transform: scale(1.05);
+  }
+  

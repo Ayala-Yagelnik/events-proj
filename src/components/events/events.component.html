@@ -1,0 +1,42 @@
+<div class="events-container">
+
+
+<!-- events.component.html -->
+ @if (events) {
+<div >
+    <h2 class="events-title">Events List</h2>
+
+    <ul class="events-list">
+        @for (event of events ; track event.id) {
+      <li class="event-item">
+        <div class="event-icon">
+            <i class="fas fa-calendar-alt"></i> <!-- Font Awesome Icon -->
+          </div>
+        <!-- {{ event.start }} - {{ event.end }} - {{event.title}} -->
+        <div class="event-details">
+            <span class="event-time">{{ event.start }} - {{ event.end }}</span>
+            <span class="event-title">{{ event.title }}</span>
+          </div>
+      </li>}
+    </ul>
+  </div>}
+  @else {
+    <ng-container *ngTemplateOutlet="noEvents"></ng-container>
+  }
+  <ng-template #noEvents>
+    <p class="no-events-message">No events found.</p>
+  </ng-template>
+  <button class="add-event-button" onclick="">add event</button>
+</div>
+<!-- 
+   
+
+@for(event of events; track event.id){
+    {{event.id}} -  {{event.title}} -  {{event.start}} -  {{event.end}}
+}
+@empty{
+    <div>!אנחנו טוענים בשבילך את הנתונים</div>
+} -->
+
+
+
