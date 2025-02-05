@@ -45,14 +45,6 @@ import { AsyncPipe } from '@angular/common';
 import { EventType } from '../../models/EventType.model';
 
 @Component({
-  // selector: 'app-eventsapi',
-  // standalone: true,
-  // imports: [AsyncPipe],
-  // templateUrl: './eventsapi.component.html',
-  // styleUrl: './eventsapi.component.css'
-  
-
-
   selector: 'app-events',
   standalone: true,
   imports: [],
@@ -64,7 +56,9 @@ export class EventsapiComponent {
   constructor(private eventService: EventsService) { }
 
   events: EventType[] = [];
+
   ngOnInit() {
+   
     this.eventService.getEvents().subscribe(data =>{
      this.events = data
     });

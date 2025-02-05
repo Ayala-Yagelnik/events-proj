@@ -7,7 +7,7 @@
   }
   
   .events-container:hover {
-    background-color: #fff0f1; /* Light blue on hover */
+    background-color: #f0fcff; /* Light blue on hover */
   }
   
   .events-title {
@@ -35,7 +35,7 @@
 
   .event-icon {
     font-size: 24px;
-    color: #ff0033;
+    color: #00d9ff;
     margin-right: 15px;
   }
   
@@ -50,12 +50,12 @@
   
   .event-title {
     font-weight: normal;
-    color: #ff0059;
+    color: #00eaff;
     font-size: 18px;
   }
   
   .no-events-message {
-    color: #888;
+    color: #888888;
     font-style: italic;
     text-align: center;
   }
@@ -63,7 +63,7 @@
   .add-event-button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #ff001e;
+    background-color: #00e5ff;
     color: white;
     border: none;
     border-radius: 4px;
@@ -72,7 +72,7 @@
   }
   
   .add-event-button:hover {
-    background-color: #b3002d;
+    background-color: #00aab3;
     transform: scale(1.05);
   }
   
